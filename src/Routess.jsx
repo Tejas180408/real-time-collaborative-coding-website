@@ -6,6 +6,7 @@ import {
 
 } from "react-router-dom";
 
+import App from './App'; // Import App component
 import Login from "./Pages/login"; // Changed to uppercase
 import Signup from "./Pages/signup"; // Changed to lowercase 's'
 
@@ -26,6 +27,7 @@ import RoomCreate from "./Components/Terminal/RoomCreate";
 function Routess() {
   return (
     <Router>
+      <App />
       {/* Wrap the routes with the providers */}
       <UserProvider>
         <ModalProvider>
